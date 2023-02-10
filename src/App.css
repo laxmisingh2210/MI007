@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;1,300;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+body{
+  background: #000!important;
+  overflow-x: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Poppins', sans-serif;
+}
+.nav-bg {
+  background: #0d0f10;
+}
+.toplogo {
+  width: 74%;
+  filter: drop-shadow(0.5px 1.5px 0px #fff);
+}
+.banner {
+  height: 250px;
+  background-color: #74EBD5;
+  background-image: linear-gradient(90deg, #01a586 0%, #384fb5 100%);
+  display: flex;
+  align-items: center;
+}
+.center-info {
+  color: #fff;
+  text-align: center;
+  padding: 3rem 12rem;
+}
+.center-info h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 56px;
+  margin-bottom: 2%;
+  letter-spacing: 1.2px;
+}
+a.menuts.nav-link {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainsection {
+  padding: 3rem 0 2rem;
+  /* background: url('./components/Tag/lineimgs.png') no-repeat center center /contain; */
+}
+.heading {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 3px 2px 1px #323030;
+  position: relative;
+  margin-bottom: 6%;
+}
+.heading::after {
+  content: "";
+  position: absolute;
+  bottom: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12%;
+  height: 2px;
+  background-image: linear-gradient(90deg, #01a586 0%, #384fb5 100%);
+}
+p{
+  margin: 0!important;
+}
+
+.categories {
+  background: #100f0f;
+  height: 117px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #323030;
+  font-family: 'IBM Plex Mono', monospace;
+  padding: 1rem;
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.categories:hover{
+  transform: scale(1.06);
+  box-shadow: 4px 4px 4px #36363d69;
+}
+.categories p{
+  font-weight: 600;
+  font-size: 22px;
+  color: #fff;
+}
+
+.categories:hover p{
+  background: -webkit-linear-gradient(#00ffa6, #a5f900);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.pages {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 93px;
+}
+.pages .active>.page-link, .page-link.active {
+  background-color: #2c2929;
+  border-color: #2c2929;
+}
+.pages .page-link {
+  color: #636464;
+}
+section.footer {
+  padding: 15px;
+  color: #adb5bd;
+  text-align: center;
+  text-transform: capitalize;
+  border-top: 1px solid #1f2020;
+  font-size: 13px;
+  background: #121213;
+}
